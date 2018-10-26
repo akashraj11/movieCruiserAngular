@@ -1,0 +1,21 @@
+<h1>{{title}}</h1>
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span>
+            <button mat-raised-button routerLink="/dashboard" routerLinkActive="active" style="margin-left: 30px">Dashboard</button>      
+            <button mat-raised-button routerLink="/movies" routerLinkActive="active" style="margin-left: 30px">Movie</button>        
+        </span>
+    
+        <span class="example-spacer" style="margin-left: 45vw"> 
+                    <app-movie-search></app-movie-search>
+        </span>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+
+
+<router-outlet></router-outlet>
+<app-messages></app-messages>
+
+
+ 

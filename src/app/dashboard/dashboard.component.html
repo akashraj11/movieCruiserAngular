@@ -1,0 +1,13 @@
+<h3>Top Movies</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let movie of movies" class="col-1-4"
+      routerLink="/movies/{{movie.movieTitle}}">
+    <div class="module movie">
+      <h4>{{movie.movieTitle}}</h4>
+    </div>
+  </a>
+</div> 
+
+
+
+  
